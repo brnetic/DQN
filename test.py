@@ -5,7 +5,7 @@ import torch
 
 
 
-cnn = torch.load("DQN_model.pth", weights_only=False)
+cnn = torch.load("DQN_model1.pth", weights_only=False)
 cnn.eval()
 
 env = gym.make("ALE/MsPacman-v5",render_mode="human")
