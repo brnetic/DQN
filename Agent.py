@@ -17,10 +17,10 @@ class Agent():
         
         self.device = torch.device('mps')
 
-        self.policy_network = CNN(3,action_dim).to(self.device)
-        self.target_network = CNN(3,action_dim).to(self.device)
-        #self.policy_network = DQN(obs_space=state_dim,n_actions=action_dim).to(self.device)
-        #self.target_network = DQN(obs_space=state_dim,n_actions=action_dim).to(self.device)
+        #self.policy_network = CNN(3,action_dim).to(self.device)
+        #self.target_network = CNN(3,action_dim).to(self.device)
+        self.policy_network = DQN(obs_space=state_dim,n_actions=action_dim).to(self.device)
+        self.target_network = DQN(obs_space=state_dim,n_actions=action_dim).to(self.device)
 
         self.target_network.load_state_dict(self.policy_network.state_dict())
         self.eps = eps
