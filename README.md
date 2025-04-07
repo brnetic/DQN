@@ -19,3 +19,4 @@ Technical Stack: Python, PyTorch, Gymnasium, ALE
 
 ## Live Demo
 
+[PacmanAI_demo.mov](https://github.com/brnetic/DQN/blob/dbb5bb9179c5ad61e31b1f905dbb6201e012b9c7/PacmanAI_demo.mov)
